@@ -3,7 +3,7 @@ const cors = require("cors"));
 const path = require("path");
 
 class Server {
-    constructor(); {
+    constructor() {
         this.app = express();
         this.port = process.env.PORT; // Loaded from .env file
         this.paths = {
