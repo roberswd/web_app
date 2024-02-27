@@ -1,7 +1,7 @@
 
 import React, {useState} from "react";
 import {Container, Row, Form, Button, InputGroup} from "react-bootstrap";
-import { searchAnime } from "../api";
+import { searchAnime } from "../../api";
 
 const anime = await searchAnime({keyword});
 

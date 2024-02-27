@@ -4,7 +4,12 @@
   "description": "Build and Deploy a Web Application with React and Nodejs and Express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "server": "nodemon",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"nmp run server\" \"npm run client\"",
+    "build": "npm run build --prefix client"
   },
   "author": "Papa Static",
   "license": "ISC",
@@ -13,5 +18,8 @@
     "dotenv": "^16.4.4",
     "express": "^4.18.2",
     "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
