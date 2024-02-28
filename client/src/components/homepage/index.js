@@ -3,8 +3,6 @@ import React, {useState} from "react";
 import {Container, Row, Form, Button, InputGroup} from "react-bootstrap";
 import { searchAnime } from "../../api";
 
-const anime = await searchAnime({keyword});
-
 function HomePage() {
     const [keyword, setKeyword] = useState("");
     const [anime, setAnime] = useState([]);
